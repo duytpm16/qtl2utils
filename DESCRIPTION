@@ -1,0 +1,15 @@
+Package: qtl2utils
+Type: Package
+Title: Modification of QTL2 Plots
+Version: 0.1.0
+Author: Duy Pham
+Maintainer: Duy Pham <duy.pham@jax.org>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: Free
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.1),
+	 qtl2 (>= 0.17-3)
+LinkingTo: Rcpp
+RoxygenNote: 6.1.0.9000
