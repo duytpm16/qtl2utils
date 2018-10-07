@@ -2,7 +2,6 @@
 % Please edit documentation in R/plot_scan2.R
 \name{plot_scan2}
 \alias{plot_scan2}
-\alias{plot_scan2}
 \title{Plot a genome scan}
 \usage{
 plot_scan2(x, map, snp_lod, snpinfo, max_peak,
