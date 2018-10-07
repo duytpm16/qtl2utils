@@ -1,6 +1,6 @@
 
 plot_genes2 <-
-  function(genes,  scan1output , snpinfo, snp_lod, max_peak, haplo_peak_drop = NULL,
+  function(genes,  scan1output, snpinfo, snp_lod, max_peak, haplo_peak_drop = NULL,
            minrow=4, padding=0.2,
            colors=c("black", "red3", "green4", "blue3", "darkorange2"),
            scale_pos=1, start_field="start", stop_field="stop",

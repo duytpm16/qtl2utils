@@ -1,6 +1,6 @@
 lod_drop_rng <- function(markers, scan1_output, max_chr, max_peak, hilit_drop){
   
-    markers <- transform(merge(markers[,c('chr','pos')],scan1_output ,by=0,all=TRUE), 
+    markers <- transform(merge(markers[,c('chr','pos')], scan1_output ,by=0,all=TRUE),
                           row.names=Row.names, Row.names=NULL)
     
     markers <- subset(markers, chr == max_chr)
