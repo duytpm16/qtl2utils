@@ -2,7 +2,10 @@
 
 In progress....
 
-Modification of some of qtl2's function to fit my use.
+Modification of some of qtl2's function to fit my use. 
+
+    library(devtools)
+    install_github("rqtl/qtl2")
 
 
 
