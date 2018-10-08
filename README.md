@@ -18,6 +18,6 @@ Broman KW, Gatti DM, Simecek P, Furlotte NA, Prins P, Sen Ś, Yandell BS, Church
 R/qtl2: software for mapping quantitative trait loci with high-dimensional data and multi-parent populations. 
 bioRxiv doi:10.1101/414748. 
 
-Functions: jpeg_pdf and jpdf_devoff were taken from https://hopstat.wordpress.com/2014/04/17/creating-smaller-pdfs-in-r/ and modified by Andrew Deighan.
+Functions: **jpeg_pdf** and **jpdf_devoff** were taken from https://hopstat.wordpress.com/2014/04/17/creating-smaller-pdfs-in-r/ and modified by Andrew Deighan (Andrew.Deighan@jax.org).
 
 
