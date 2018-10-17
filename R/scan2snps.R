@@ -16,7 +16,7 @@ scan2snps <- function(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
                             keep_all_snps = FALSE, cores = 1, ...)
 
        pca.snp.int <- scan1snps(genoprobs, map, pheno, kinship = kinship, addcovar = addcovar,
-                                Xcovar = Xcovar, intcovar = incovar, weights = weights, reml = reml,
+                                Xcovar = Xcovar, intcovar = intcovar, weights = weights, reml = reml,
                                 model = c("normal", "binary"), query_func = query_func, chr = chr,
                                 start = start, end = end, snpinfo = snpinfo, batch_length = 20,
                                 keep_all_snps = FALSE, cores = 1, ...)
@@ -33,7 +33,7 @@ scan2snps <- function(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
     }else{
 
       pca.snp <- scan1snps(genoprobs, map, pheno, kinship = kinship, addcovar = addcovar,
-                           Xcovar = Xcovar, intcovar = incovar, weights = weights, reml = reml,
+                           Xcovar = Xcovar, intcovar = intcovar, weights = weights, reml = reml,
                            model = c("normal", "binary"), query_func = query_func, chr = chr,
                            start = start, end = end, snpinfo = snpinfo, batch_length = 20,
                            keep_all_snps = FALSE, cores = 1, ...)
