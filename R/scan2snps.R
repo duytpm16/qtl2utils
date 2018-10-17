@@ -9,16 +9,16 @@ scan2snps <- function(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
     ### SNPs Association
     if(!is.null(intcovar)){
 
-       pca.snp <- scan1snps(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
-                            Xcovar = NULL, intcovar = NULL, weights = NULL, reml = TRUE,
-                            model = c("normal", "binary"), query_func = NULL, chr = NULL,
-                            start = NULL, end = NULL, snpinfo = NULL, batch_length = 20,
+       pca.snp <- scan1snps(genoprobs, map, pheno, kinship = kinship, addcovar = addcovar,
+                            Xcovar = Xcovar, intcovar = NULL, weights = weights, reml = reml,
+                            model = c("normal", "binary"), query_func = query_func, chr = chr,
+                            start = start, end = end, snpinfo = snpinfo, batch_length = 20,
                             keep_all_snps = FALSE, cores = 1, ...)
 
-       pca.snp.int <- scan1snps(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
-                                Xcovar = NULL, intcovar = NULL, weights = NULL, reml = TRUE,
-                                model = c("normal", "binary"), query_func = NULL, chr = NULL,
-                                start = NULL, end = NULL, snpinfo = NULL, batch_length = 20,
+       pca.snp.int <- scan1snps(genoprobs, map, pheno, kinship = kinship, addcovar = addcovar,
+                                Xcovar = Xcovar, intcovar = incovar, weights = weights, reml = reml,
+                                model = c("normal", "binary"), query_func = query_func, chr = chr,
+                                start = start, end = end, snpinfo = snpinfo, batch_length = 20,
                                 keep_all_snps = FALSE, cores = 1, ...)
 
 
@@ -32,10 +32,10 @@ scan2snps <- function(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
 
     }else{
 
-      pca.snp <- scan1snps(genoprobs, map, pheno, kinship = NULL, addcovar = NULL,
-                           Xcovar = NULL, intcovar = NULL, weights = NULL, reml = TRUE,
-                           model = c("normal", "binary"), query_func = NULL, chr = NULL,
-                           start = NULL, end = NULL, snpinfo = NULL, batch_length = 20,
+      pca.snp <- scan1snps(genoprobs, map, pheno, kinship = kinship, addcovar = addcovar,
+                           Xcovar = Xcovar, intcovar = incovar, weights = weights, reml = reml,
+                           model = c("normal", "binary"), query_func = query_func, chr = chr,
+                           start = start, end = end, snpinfo = snpinfo, batch_length = 20,
                            keep_all_snps = FALSE, cores = 1, ...)
 
       top <- top_snps(pca.snp$lod, pca.snp$snpinfo)
