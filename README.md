@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 ## R Package: qtl2utils
 
 In progress....
@@ -23,5 +21,3 @@ bioRxiv doi:10.1101/414748.
 
 Functions: **jpeg_pdf** and **jpdf_devoff** were taken from https://hopstat.wordpress.com/2014/04/17/creating-smaller-pdfs-in-r/ and modified by Andrew Deighan (Andrew.Deighan@jax.org).
 
-
->>>>>>> a777503522b6d053d14976a56b56baf866469b66
