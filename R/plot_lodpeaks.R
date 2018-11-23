@@ -1,4 +1,4 @@
-plot_qtl_hotspot <- function(lod.peaks, map, window, slide, title = NULL){
+plot_lodpeaks <- function(lod.peaks, map, window, slide, title = NULL){
 
 
 
