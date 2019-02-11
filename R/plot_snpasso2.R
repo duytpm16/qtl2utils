@@ -2,7 +2,7 @@
 plot_snpasso2 <-
   function(scan1output, snpinfo, max_peak, haplo_peak_drop = NULL, haplo_scan = NULL, genes=NULL, lodcolumn=1, show_all_snps=TRUE, chr=NULL,
            add=FALSE, drop_hilit=NA, col_hilit="violetred", col="darkslateblue",
-           gap=25, minlod=0, ...)
+           gap=25, minlod=0, text_cex = .2 ...)
   {
     if(is.null(scan1output)) stop("scan1output is NULL")
     if(is.null(snpinfo)) stop("snpinfo is NULL")
@@ -39,7 +39,7 @@ plot_snpasso2 <-
         return( plot_snpasso_and_genes2(scan1output, snpinfo, max_peak = max_peak, haplo_peak_drop = haplo_peak_drop, haplo_scan = haplo_scan,
                                         show_all_snps=show_all_snps,
                                         drop_hilit=drop_hilit, col_hilit=col_hilit,
-                                        col=col, gap=gap, minlod=minlod, genes=genes, ...) )
+                                        col=col, gap=gap, minlod=minlod, genes=genes, text_cex = text_cex, ...) )
       }
     }
 
