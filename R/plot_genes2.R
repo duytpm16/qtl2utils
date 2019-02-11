@@ -1,7 +1,7 @@
 
 plot_genes2 <-
   function(genes,  scan1output, snpinfo, snp_lod, max_peak, haplo_peak_drop = NULL,
-           minrow=4, padding=0.2,
+           minrow=4, padding=0.2, text_cex = .2,
            colors=c("black", "red3", "green4", "blue3", "darkorange2"),
            scale_pos=1, start_field="start", stop_field="stop",
            strand_field="strand", name_field="Name", ...)
@@ -119,7 +119,7 @@ plot_genes2 <-
     # initial determination of text size
     maxy <- minrow
     height <- 1/maxy
-    text_cex <- .2
+    text_cex <- text_cex
 
     # adjust text size and determine vertical location of genes
     for(it in 1:2) { # go through all of this twice
