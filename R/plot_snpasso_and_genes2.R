@@ -38,7 +38,7 @@ plot_snpasso_and_genes2 <-
     plot_snpasso2(scan1output, snpinfo, max_peak = max_peak, haplo_peak_drop = haplo_peak_drop,
                   show_all_snps=show_all_snps, drop_hilit=drop_hilit, col_hilit=col_hilit, col=col,
                   gap=gap, minlod=minlod, xlim=xlim, ylim=c(0,range(scan1output)[2]+2),
-                  xaxt="n", xlab="",  main=main, ...)
+                  xaxt="n", xlab="", text_cex = text_cex,  main=main, ...)
 
     if(!is.null(haplo_scan)){
       par(new = T)
