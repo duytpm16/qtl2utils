@@ -7,7 +7,7 @@
 plot_snpasso_and_genes2 <-
   function(scan1output, snpinfo, max_peak, haplo_peak_drop = NULL, haplo_scan = NULL, show_all_snps=TRUE,
            drop_hilit=NA, col_hilit="violetred", col="darkslateblue",
-           gap=25, minlod=0,
+           gap=25, minlod=0, text_cex = .2,
            genes, minrow=4, padding=0.2,
            colors=c("black", "red3", "green4", "blue3", "darkorange2"),
            scale_pos=1, start_field="start", stop_field="stop",
@@ -51,6 +51,6 @@ plot_snpasso_and_genes2 <-
     plot_genes2(genes, snp_lod = scan1output, haplo_peak_drop = haplo_peak_drop, max_peak = max_peak, scan1output = scan1output, snpinfo = snpinfo,
                 minrow=minrow, padding=padding, colors=colors, scale_pos=scale_pos, start_field=start_field,
                 stop_field=stop_field, strand_field=strand_field, name_field=name_field, xlim=xlim,
-                xaxt=xaxt, xlab=xlab, sub=sub, ...)
+                xaxt=xaxt, xlab=xlab, sub=sub, text_cex = text_cex, ...)
 
   }
