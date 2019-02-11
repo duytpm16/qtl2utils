@@ -93,7 +93,7 @@ plot_snpasso2 <-
       function(max_peak, haplo_peak_drop = NULL, haplo_scan = NULL, pch=16, cex=0.5, ylim=NULL, bgcolor="gray90",
                altbgcolor="gray85",
                drop_hilit=NA, col_hilit="violetred",
-               drop.hilit=NULL, col.hilit=NULL, ...)
+               drop.hilit=NULL, col.hilit=NULL,text_cex = text_cex, ...)
       {
         if(!is.null(drop.hilit)) {
           warning("drop.hilit is deprecated; use drop_hilit")
@@ -117,7 +117,7 @@ plot_snpasso2 <-
                    gap=gap, add=add, col = col, type="p", cex=cex, pch=pch,...)
       }
 
-    plot_snpasso_internal2( max_peak = max_peak, haplo_peak_drop = haplo_peak_drop, drop_hilit=drop_hilit, col_hilit=col_hilit, ...)
+    plot_snpasso_internal2( max_peak = max_peak, haplo_peak_drop = haplo_peak_drop, drop_hilit=drop_hilit, col_hilit=col_hilit,text_cex = text_cex, ...)
   }
 
 # expand snp association results according to snpinfo
