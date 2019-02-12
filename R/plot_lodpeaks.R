@@ -34,23 +34,23 @@ plot_lodpeaks <- function(lod.peaks, map, window, slide, title = NULL){
 
 
 
-
+        return(lod_df)
 
 
 
 
         ### Plot lod peaks
-        ggplot(lod_df, aes(x = pos, y = count)) +
-          ggtitle(paste(title, 'Win:',window,', Slide:', slide)) +
-          ylab('Count') +
-          xlab('Position') +
-          geom_line()+
-          theme(panel.spacing.x = unit(0.1, "lines"),
-                axis.text = element_text(size = 25),
-                axis.title = element_text(size = 40),
-                plot.title = element_text(size = 45, hjust = .5),
-                axis.text.x = element_blank(),
-                strip.text = element_text(size= 23),
-                axis.line.y = element_line(size = .5)) +
-          facet_grid(.~chr, scales = "free_x", space = "free")
+ #       ggplot(lod_df, aes(x = pos, y = count)) +
+ #         ggtitle(paste(title, 'Win:',window,', Slide:', slide)) +
+ ##         ylab('Count') +
+  #        xlab('Position') +
+  #        geom_line()+
+  #        theme(panel.spacing.x = unit(0.1, "lines"),
+  ##              axis.text = element_text(size = 25),
+  #              axis.title = element_text(size = 40),
+  #              plot.title = element_text(size = 45, hjust = .5),
+  #              axis.text.x = element_blank(),
+  #              strip.text = element_text(size= 23),
+  #              axis.line.y = element_line(size = .5)) +
+  #        facet_grid(.~chr, scales = "free_x", space = "free")
 }
