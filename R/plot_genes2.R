@@ -124,10 +124,6 @@ plot_genes2 <-
     # adjust text size and determine vertical location of genes
     for(it in 1:2) { # go through all of this twice
 
-      while(max(abs(strheight(name, cex=text_cex))) > height*(1-padding)) {
-        text_cex <- text_cex * 0.99
-      }
-
       # horizontal padding
       space <- strwidth(' ', cex=text_cex)
 
